@@ -44,9 +44,9 @@ class Transport
      * underlying cluster connections
      *
      * @param $retries
-     * @param bool $sniffOnStart
      * @param ConnectionPool\AbstractConnectionPool $connectionPool
      * @param \Psr\Log\LoggerInterface $log    Monolog logger object
+     * @param bool $sniffOnStart
      */
     public function __construct($retries, AbstractConnectionPool $connectionPool, LoggerInterface $log, bool $sniffOnStart = false)
     {
